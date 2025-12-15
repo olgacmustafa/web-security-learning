@@ -1,6 +1,17 @@
 ## Overview
 
-This lab focuses on brute-force attacks against web authentication systems.
+This lab is based on the **Discover Lernaean** machine provided by Hackviser
+and focuses on brute-force attacks and weak authentication mechanisms.
 
-The objective was to evaluate whether the login mechanism implemented
-adequate protections against repeated login attempts.
+The target system exposes multiple services, including:
+- Apache HTTP Server
+- SSH service
+
+The objective of this lab was to:
+- Perform reconnaissance and service enumeration
+- Discover hidden web directories
+- Identify weak or default credentials
+- Conduct an SSH brute-force attack
+- Gain authenticated access to the system
+
+All activities were performed in an authorized training environment.
