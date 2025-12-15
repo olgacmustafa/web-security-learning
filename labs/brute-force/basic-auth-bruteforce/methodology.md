@@ -1,11 +1,18 @@
 ## Methodology
 
-The authentication endpoint was tested for:
-- Rate limiting
-- Account lockout mechanisms
-- CAPTCHA enforcement
+The assessment began with network reconnaissance to identify
+open ports and running services.
 
-A controlled set of credential attempts was used to observe
-how the application responded to repeated failed logins.
+Following service detection, directory enumeration was performed
+against the web server to discover hidden paths.
 
-No real user credentials were used during testing.
+After identifying a web-based file management application,
+publicly available documentation was reviewed to understand
+its authentication mechanism.
+
+Once a valid system user was identified, a brute-force approach
+was applied to the SSH service using a controlled and limited
+credential list.
+
+The methodology focused on understanding system behavior
+rather than blindly attacking services.
