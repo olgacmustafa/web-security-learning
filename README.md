@@ -1,11 +1,11 @@
 # Web Security Learning Repository
 
-This repository contains **educational and authorized web security lab write-ups**.
-It documents my hands-on learning journey in **web application security**
-through structured and ethical lab-based assessments.
+This repository contains **authorized and educational web security lab write-ups**.
+It documents my hands-on learning journey in **web application security** through
+structured, ethical, and lab-based assessments.
 
-All activities were performed in **legal training environments** such as
-dedicated security labs and simulations.
+All activities were performed exclusively in **legal training environments**
+such as dedicated security labs, simulations, and intentionally vulnerable systems.
 
 ---
 
@@ -16,6 +16,8 @@ dedicated security labs and simulations.
 - File Upload Vulnerabilities
 - Authentication Bypass
 - Remote Code Execution (RCE)
+- Server-Side Vulnerabilities
+- File Inclusion Issues (LFI/RFI)
 
 ---
 
@@ -32,32 +34,33 @@ dedicated security labs and simulations.
 - Abuse of default credentials
 - SSH brute-force attack
 
-Each lab is documented with a clear and consistent write-up structure.
+Additional labs focus on real-world web vulnerability classes and attack chains.
 
 ---
 
 ## Repository Structure
 
-Each lab write-up includes the following sections:
+Each lab write-up follows a clear and consistent structure:
 
-- **Overview** – Scope and objective of the lab  
-- **Exploitation / Methodology** – How the vulnerability was identified and exploited  
-- **Impact / Results** – Security impact and achieved access  
-- **Mitigation** – Recommended defensive measures  
-- **Lessons Learned** – Key takeaways from the lab  
+- **Overview** – Scope, objective, and attack surface  
+- **Methodology** – Reconnaissance and vulnerability identification approach  
+- **Exploitation** – Step-by-step exploitation of identified weaknesses  
+- **Impact / Results** – Security impact and achieved level of access  
+- **Mitigation** – Recommended defensive and secure coding measures  
+- **Lessons Learned** – Key technical and conceptual takeaways  
 
-This structure emphasizes **understanding and reasoning** over tool usage
-or exploit dumping.
+This structure emphasizes **understanding root causes and attack logic**
+rather than simple tool usage or exploit dumping.
 
 ---
 
 ## Disclaimer
 
-All content in this repository is based on **authorized and isolated training labs**.
+All content in this repository is based on **authorized and isolated training environments**.
 
-- No production systems were targeted
-- No real user data is exposed
-- Sensitive details such as payloads, credentials, and IP addresses are
-  intentionally omitted or generalized
+- No production systems were targeted  
+- No real user data was accessed or exposed  
+- Sensitive details (payloads, credentials, IP addresses) are intentionally
+  omitted or generalized  
 
-This repository is published **strictly for educational purposes**.
+This repository is published **strictly for educational and learning purposes**.
