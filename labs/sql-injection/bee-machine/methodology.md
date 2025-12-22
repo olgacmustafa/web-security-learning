@@ -1,18 +1,48 @@
 # Methodology
 
-SQL Injection zafiyetini tespit etmek için,
-uygulamanın kullanıcıdan veri aldığı noktalar
-incelenmiştir.
+Bu laboratuvarda, SQL Injection zafiyetini tespit etmek ve
+anlamak için **adım adım bir test yaklaşımı** izlenmiştir.
 
-İzlenen yaklaşım şu şekildedir:
+İlk olarak, uygulamanın kullanıcıdan veri aldığı giriş
+noktaları incelenmiştir. Özellikle, bu girdilerin arka planda
+çalışan SQL sorgularında nasıl kullanıldığına odaklanılmıştır.
 
-1. Web uygulamasında giriş alanları ve parametreler belirlendi.
-2. Kullanıcı girdisinin arka planda çalışan SQL sorgularını
-   etkileyip etkilemediği test edildi.
-3. Basit mantıksal ifadelerle uygulamanın verdiği tepkiler
-   gözlemlendi.
-4. Normal giriş ile test girdileri arasındaki farklar
-   karşılaştırılarak zafiyet doğrulandı.
+---
 
-Bu aşamada amaç, zafiyetin var olup olmadığını
-anlamaktır; sömürü bu dosyanın konusu değildir.
+## 🔍 Test Yaklaşımı
+
+İzlenen temel adımlar şunlardır:
+
+1. Kullanıcıdan veri alan giriş alanlarının belirlenmesi  
+2. Girilen verinin sunucu tarafında herhangi bir doğrulama
+   veya filtrelemeden geçip geçmediğinin gözlemlenmesi  
+3. Özel olarak hazırlanmış giriş değerleri (payload) ile
+   uygulamanın davranışının test edilmesi  
+
+Bu süreçte, uygulamanın beklenmeyen veya hatalı girdilere
+nasıl tepki verdiği dikkatle analiz edilmiştir.
+
+---
+
+## 🧪 Deneme ve Gözlem
+
+Testler sırasında:
+
+- Normal kullanıcı girdileri ile uygulamanın beklenen şekilde
+  çalıştığı gözlemlenmiştir  
+- Özel karakterler ve mantıksal ifadeler içeren girdiler
+  girildiğinde, uygulamanın verdiği yanıtlar incelenmiştir  
+
+Bu gözlemler, uygulamanın kullanıcı girdisini doğrudan
+SQL sorgusu içerisine eklediğini ve yeterli güvenlik
+kontrollerini uygulamadığını göstermektedir.
+
+---
+
+## ⚠️ Not
+
+Bu metodoloji, **eğitim amaçlı** hazırlanmış basit bir
+senaryoyu temel almaktadır.
+Gerçek dünyadaki uygulamalarda, SQL Injection zafiyetlerini
+tespit etmek için daha kapsamlı ve otomatik test yöntemleri
+kullanılabilir.
