@@ -1,17 +1,55 @@
-## Overview
+# Overview
 
-This lab is based on the **Discover Lernaean** machine provided by Hackviser
-and focuses on brute-force attacks and weak authentication mechanisms.
+Bu laboratuvar, web uygulamalarında sıkça karşılaşılan
+**Brute Force saldırılarını** tanıtmayı ve bu saldırıların
+nasıl çalıştığını anlamayı amaçlamaktadır.
 
-The target system exposes multiple services, including:
-- Apache HTTP Server
-- SSH service
+Brute Force saldırıları, saldırganın bir kullanıcı hesabına
+erişim sağlamak için çok sayıda parola veya kimlik bilgisi
+kombinasyonunu sistematik olarak denemesi prensibine dayanır.
 
-The objective of this lab was to:
-- Perform reconnaissance and service enumeration
-- Discover hidden web directories
-- Identify weak or default credentials
-- Conduct an SSH brute-force attack
-- Gain authenticated access to the system
+Bu tür saldırılar genellikle:
+- Zayıf parola politikaları
+- Giriş denemesi sınırı olmaması
+- Yetersiz güvenlik kontrolleri
 
-All activities were performed in an authorized training environment.
+gibi durumlarda başarılı olur.
+
+---
+
+## 🎯 Laboratuvarın Amacı
+
+Bu laboratuvarın temel amacı:
+
+- Brute Force saldırılarının **mantığını** kavramak  
+- Kimlik doğrulama mekanizmalarının neden korunması
+  gerektiğini anlamak  
+- Sınırsız veya kontrolsüz giriş denemelerinin
+  oluşturduğu güvenlik risklerini görmek  
+
+---
+
+## 🧠 Genel Bakış
+
+Bu çalışma kapsamında:
+
+- Bir web uygulamasındaki giriş (login) mekanizması
+  incelenecektir  
+- Saldırganın, farklı parola kombinasyonlarını deneyerek
+  hesaplara erişim sağlamaya çalıştığı senaryo ele alınacaktır  
+- Başarılı ve başarısız giriş denemelerinin uygulama
+  üzerindeki etkileri gözlemlenecektir  
+
+Bu laboratuvar, Brute Force saldırılarının neden
+**basit ama etkili** olduğunu göstermeyi amaçlamaktadır.
+
+---
+
+## ⚠️ Uyarı
+
+Bu laboratuvarda anlatılan tüm senaryolar **eğitim amaçlıdır**.
+Brute Force saldırıları gerçek sistemlerde ciddi güvenlik
+ihlallerine yol açabilir.
+
+Bu teknikler yalnızca **yetkili ve kontrollü ortamlarda**
+test amacıyla kullanılmalıdır.
