@@ -1,66 +1,54 @@
-# Web Security Learning Repository
+# 🔐 Web Security Learning Labs
 
-This repository contains **authorized and educational web security lab write-ups**.
-It documents my hands-on learning journey in **web application security** through
-structured, ethical, and lab-based assessments.
+Bu repository, web uygulama güvenliği alanında temel zafiyetleri
+öğrenmek ve anlamak amacıyla hazırlanmış **eğitim amaçlı laboratuvarları**
+içermektedir.
 
-All activities were performed exclusively in **legal training environments**
-such as dedicated security labs, simulations, and intentionally vulnerable systems.
+Her laboratuvar, belirli bir güvenlik açığını (örneğin SQL Injection,
+Brute Force, File Upload, RCE vb.) ele alır ve bu açığın:
 
----
+- Nasıl oluştuğunu
+- Nasıl sömürülebildiğini
+- Nasıl önlenebileceğini
 
-## Topics Covered
-
-- SQL Injection
-- Brute Force Attacks
-- File Upload Vulnerabilities
-- Authentication Bypass
-- Remote Code Execution (RCE)
-- Server-Side Vulnerabilities
-- File Inclusion Issues (LFI/RFI)
+adım adım açıklamayı amaçlar.
 
 ---
 
-## Labs Included
+## 🎯 Amaç
 
-### 🐝 Bee Machine (Hackviser)
-- SQL Injection leading to authentication bypass
-- Insecure file upload vulnerability
-- Remote Code Execution through vulnerability chaining
+Bu repository’nin amacı:
 
-### 🐍 Discover Lernaean (Hackviser)
-- Network and service enumeration
-- Directory discovery
-- Abuse of default credentials
-- SSH brute-force attack
-
-Additional labs focus on real-world web vulnerability classes and attack chains.
+- Web güvenliği zafiyetlerini **pratik örnekler** üzerinden öğrenmek  
+- Saldırgan bakış açısını anlamak  
+- Güvenli yazılım geliştirme farkındalığı kazanmak  
+- Siber güvenlik alanındaki kişisel gelişimi belgelemek  
 
 ---
 
-## Repository Structure
+## 🧪 Laboratuvar Yapısı
 
-Each lab write-up follows a clear and consistent structure:
+Her laboratuvar aşağıdaki bölümlerden oluşur:
 
-- **Overview** – Scope, objective, and attack surface  
-- **Methodology** – Reconnaissance and vulnerability identification approach  
-- **Exploitation** – Step-by-step exploitation of identified weaknesses  
-- **Impact / Results** – Security impact and achieved level of access  
-- **Mitigation** – Recommended defensive and secure coding measures  
-- **Lessons Learned** – Key technical and conceptual takeaways  
-
-This structure emphasizes **understanding root causes and attack logic**
-rather than simple tool usage or exploit dumping.
+- **Overview** – Zafiyetin genel tanımı  
+- **Methodology** – Test yaklaşımı ve kullanılan yöntemler  
+- **Exploitation** – Açığın sömürülme süreci  
+- **Mitigation** – Güvenlik önlemleri ve çözüm önerileri  
+- **Lessons Learned / Results** – Öğrenilen dersler  
 
 ---
 
-## Disclaimer
+## ⚠️ Uyarı
 
-All content in this repository is based on **authorized and isolated training environments**.
+Bu repository **tamamen eğitim amaçlıdır**.  
+Buradaki içerikler yalnızca **yetkili ve kontrollü ortamlarda**
+kullanılmalıdır.
 
-- No production systems were targeted  
-- No real user data was accessed or exposed  
-- Sensitive details (payloads, credentials, IP addresses) are intentionally
-  omitted or generalized  
+---
 
-This repository is published **strictly for educational and learning purposes**.
+## 🌱 Not
+
+Açıklamaların bir kısmı öğrenme sürecini kolaylaştırmak adına
+Türkçe olarak hazırlanmıştır.
+Teknik terimler ve klasör yapıları sektörel standartlara uygun
+olarak İngilizce bırakılmıştır.
