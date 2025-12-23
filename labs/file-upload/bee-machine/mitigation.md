@@ -1,14 +1,45 @@
-## Mitigation Strategies
+# Mitigation
 
-To prevent file upload vulnerabilities, the following security
-measures should be implemented:
+Bu laboratuvarda tespit edilen File Upload zafiyeti,
+dosya yükleme mekanizmasında
+sunucu taraflı güvenlik kontrollerinin
+yetersiz olması nedeniyle ortaya çıkmıştır.
 
-- Enforce strict server-side file type validation
-- Validate both file extensions and MIME types
-- Rename uploaded files before storing them
-- Store uploaded files outside the web root
-- Disable execution permissions on upload directories
-- Implement file size limits
+Yalnızca istemci tarafında yapılan
+kontroller, saldırganlar tarafından
+kolaylıkla aşılabilmektedir.
 
-Applying these controls significantly reduces the risk of
-remote code execution through file upload features.
+---
+
+## 🛡️ Önerilen Güvenlik Önlemleri
+
+File Upload zafiyetlerini önlemek için
+aşağıdaki önlemler uygulanmalıdır:
+
+- **Sunucu Taraflı Dosya Kontrolü**  
+  Yüklenen dosyaların uzantısı,
+  MIME tipi ve içerik yapısı
+  sunucu tarafında doğrulanmalıdır.
+
+- **İzin Verilen Uzantılar (Whitelist)**  
+  Yalnızca belirli ve güvenli dosya
+  uzantılarına izin verilmelidir.
+
+- **Dosya Yeniden Adlandırma**  
+  Yüklenen dosyaların isimleri
+  sunucu tarafından rastgele
+  şekilde yeniden oluşturulmalıdır.
+
+- **Çalıştırılamaz Dizin Kullanımı**  
+  Yüklenen dosyalar,
+  çalıştırma izni olmayan
+  dizinlerde saklanmalıdır.
+
+---
+
+## 🎯 Sonuç
+
+Bu önlemler uygulandığında,
+File Upload zafiyetlerinin
+oluşma riski önemli ölçüde
+azaltılacaktır.
