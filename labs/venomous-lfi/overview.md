@@ -1,10 +1,14 @@
 # Overview
 
-Venomous is a web security lab focusing on file-based vulnerabilities.
+Bu laboratuvarda, bir web uygulamasında bulunan
+**Local File Inclusion (LFI)** zafiyeti test edilmiştir.
 
-The application improperly handles file inclusion parameters,
-allowing attackers to traverse directories and include arbitrary
-files from the server filesystem.
+Amaç, uygulamanın dosya çağırma mekanizmasının
+yeterince güvenli olmaması durumunda,
+saldırganın sunucu üzerindeki yerel dosyalara
+yetkisiz şekilde erişip erişemeyeceğini
+pratik olarak gözlemlemektir.
 
-Combined with insecure logging practices, this leads to
-remote command execution.
+Bu çalışma, yetkili ve kontrollü bir
+laboratuvar ortamında,
+eğitim ve portföy amacıyla gerçekleştirilmiştir.
