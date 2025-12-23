@@ -1,26 +1,51 @@
 # Mitigation
 
-The following security measures can be implemented to prevent
-Server-Side Template Injection (SSTI) vulnerabilities:
+Bu laboratuvarda tespit edilen Server-Side Template Injection (SSTI)
+zafiyeti, kullanıcıdan alınan girdilerin
+sunucu tarafında kullanılan template motoru
+içerisinde doğrudan işlenmesi nedeniyle
+ortaya çıkmıştır.
 
-## Input Handling
-- Never render raw user input directly inside templates
-- Apply strict input validation and output encoding
-- Use allowlists for acceptable input values
+Kullanıcı girdilerinin yeterince filtrelenmemesi
+ve güvenli şekilde ayrıştırılmaması,
+saldırganın template ifadeleri enjekte etmesine
+olanak tanımaktadır.
 
-## Template Engine Security
-- Enable sandbox or restricted execution modes where supported
-- Disable dangerous functions and filters such as `system`, `exec`, or similar
-- Avoid exposing template engine errors to end users
+---
 
-## Application Hardening
-- Separate application logic from template rendering
-- Store sensitive information outside the web root
-- Avoid hardcoding secrets inside configuration files
+## 🛡️ Önerilen Güvenlik Önlemleri
 
-## Monitoring and Defense
-- Implement logging and monitoring for abnormal template usage
-- Perform regular security testing and code reviews
+SSTI zafiyetlerini önlemek için aşağıdaki
+önlemler uygulanmalıdır:
 
-Applying these controls significantly reduces the risk of SSTI-related
-remote code execution vulnerabilities.
+- **Template Auto-Escaping Kullanımı**  
+  Template motorlarında otomatik escape
+  mekanizmaları aktif hale getirilmelidir.
+
+- **Kullanıcı Girdilerinin Filtrelenmesi**  
+  Kullanıcıdan alınan veriler,
+  template ifadeleri çalıştırılmadan önce
+  güvenli şekilde filtrelenmelidir.
+
+- **Mantık ve Görünümün Ayrılması**  
+  İş mantığı (logic) template dosyaları
+  içerisinde kullanılmamalı,
+  yalnızca görünüm (view) katmanı
+  template’ler üzerinden oluşturulmalıdır.
+
+- **Güvenli Template Motoru Konfigürasyonu**  
+  Template motorlarının tehlikeli fonksiyonlara
+  erişimi sınırlandırılmalı veya tamamen
+  devre dışı bırakılmalıdır.
+
+---
+
+## 🎯 Sonuç
+
+Bu önlemler uygulandığında,
+Server-Side Template Injection zafiyetlerinin
+oluşma riski önemli ölçüde azaltılacaktır.
+
+Template motorlarının güvenli kullanımı,
+web uygulama güvenliğinin
+kritik bir parçasıdır.
