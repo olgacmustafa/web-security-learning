@@ -1,20 +1,75 @@
-# Bee Machine – File Upload Lab
+# 📁 File Upload Vulnerability Lab
 
-This directory contains the write-up for an **insecure file upload vulnerability**
-identified in the Bee Machine lab on Hackviser.
+- **Platform:** Hackviser  
+- **Kategori:** Web Uygulama Güvenliği  
 
-## Scope
-The lab focuses on how insufficient server-side validation in file upload
-functionality can lead to **remote code execution (RCE)**.
+Bu laboratuvar çalışmasında, bir web uygulamasında bulunan
+**File Upload zafiyeti** test edilmiştir.
 
-## Write-Up Structure
-The vulnerability is documented using the following sections:
+Amaç, dosya yükleme mekanizmasının yeterince
+kontrol edilmemesi durumunda,
+saldırganın uygulama üzerinde
+yetkisiz işlemler gerçekleştirebileceğini
+pratik olarak gözlemlemektir.
 
-- **Overview** – Lab context and objective
-- **Exploitation** – Vulnerability discovery and exploitation logic
-- **Mitigation** – Recommended security controls
-- **Lessons Learned** – Key takeaways from the lab
+Bu çalışma, yetkili ve kontrollü bir
+laboratuvar ortamında,
+eğitim ve portföy amacıyla yapılmıştır.
 
-This lab demonstrates how file upload vulnerabilities can be combined
-with other weaknesses, such as authentication bypass, to fully compromise
-a web application.
+---
+
+## 🎯 Laboratuvarın Amacı
+
+Bu lab’ın temel amacı:
+
+- Dosya yükleme alanlarının neden
+  kritik bir saldırı yüzeyi olduğunu anlamak  
+- Dosya uzantısı ve içerik kontrollerinin
+  nasıl bypass edilebildiğini görmek  
+- File Upload zafiyetlerinin,
+  daha ileri saldırılar (örneğin RCE)
+  için nasıl zemin hazırlayabildiğini
+  kavramaktır  
+
+---
+
+## 🔓 Ele Alınan Zafiyet
+
+Bu laboratuvar kapsamında ele alınan
+ana güvenlik açığı:
+
+- **File Upload Zafiyeti**  
+  Yüklenen dosyaların uzantı, içerik ve
+  çalıştırılabilirlik açısından
+  yeterince kontrol edilmemesi
+
+---
+
+## 📁 İçerik Yapısı
+
+Bu klasörde yer alan dosyalar:
+
+- **overview.md**  
+  File Upload zafiyetinin genel tanımı
+  ve lab’ın kapsamı
+
+- **methodology.md**  
+  Dosya yükleme alanının nasıl analiz edildiği
+  ve izlenen test yaklaşımı
+
+- **exploitation.md**  
+  File Upload zafiyetinin pratikte
+  nasıl test edildiğini gösteren
+  uygulama adımları
+
+- **mitigation.md**  
+  File Upload zafiyetlerine karşı
+  alınabilecek güvenlik önlemleri
+
+- **lessons-learned.md**  
+  Laboratuvar çalışması sonucunda
+  edinilen kişisel kazanımlar ve
+  teknik çıkarımlar
+
+---
+
