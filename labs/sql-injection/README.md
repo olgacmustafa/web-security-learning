@@ -2,7 +2,6 @@
 
 - **Platform:** Hackviser  
 - **Kategori:** Web Uygulama Güvenliği  
-- **Zorluk Seviyesi:** Başlangıç → Orta  
 
 Bu laboratuvar çalışmasında, bir web uygulamasında bulunan
 **SQL Injection (SQLi)** zafiyeti test edilmiştir.
@@ -73,15 +72,4 @@ Bu klasörde yer alan dosyalar:
 
 ---
 
-## ⚠️ Yasal ve Etik Uyarı
 
-Bu repository’de yer alan tüm çalışmalar
-**eğitim amaçlıdır**.
-
-Anlatılan teknikler yalnızca
-**yetkili ve kontrollü ortamlar**
-üzerinde test edilmelidir.
-
-Gerçek sistemlerde izinsiz olarak
-uygulanması hukuki ve etik
-sorunlara yol açabilir.
