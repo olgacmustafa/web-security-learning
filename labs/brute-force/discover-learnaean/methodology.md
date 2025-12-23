@@ -30,6 +30,3 @@ Test sürecinde aşağıdaki adımlar izlenmiştir:
    servisler üzerinde Brute Force
    saldırısının test edilmesine karar verilmesi
 
-Bu metodoloji ile, saldırının rastgele değil,
-**bilinçli bir keşif sürecinin sonucu**
-olarak gerçekleştirildiği gösterilmiştir.
