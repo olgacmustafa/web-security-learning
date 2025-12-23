@@ -1,11 +1,47 @@
-## Lessons Learned
+# Lessons Learned
 
-- File upload functionality is one of the most dangerous features
-  in web applications when improperly secured
-- Client-side validation cannot be trusted
-- Authentication bypass combined with file upload vulnerabilities
-  significantly increases overall impact
-- Vulnerability chaining plays a critical role in real-world attacks
+Bu laboratuvar çalışması sayesinde,
+File Upload mekanizmalarının
+yetersiz şekilde kontrol edilmesi durumunda,
+uygulama güvenliği açısından
+ne kadar ciddi riskler oluşabileceği
+net bir şekilde görülmüştür.
 
-This lab highlighted the importance of secure file handling
-and defense-in-depth strategies in web application security.
+---
+
+## 🧠 Edinilen Kazanımlar
+
+Bu lab kapsamında:
+
+- Dosya yükleme alanlarının,
+  saldırganlar için önemli bir
+  giriş noktası olabileceği anlaşılmıştır.
+
+- Yalnızca istemci tarafında yapılan
+  dosya kontrollerinin güvenli olmadığı
+  gözlemlenmiştir.
+
+- Dosya uzantısı kontrollerinin
+  farklı yöntemlerle (çift uzantı,
+  büyük/küçük harf farkı vb.)
+  aşılabildiği görülmüştür.
+
+- Yüklenen dosyaların doğrudan
+  erişilebilir dizinlerde tutulmasının,
+  daha ileri saldırılara
+  (örneğin RCE) zemin hazırladığı
+  anlaşılmıştır.
+
+---
+
+## 🎯 Genel Değerlendirme
+
+Bu çalışma, File Upload zafiyetlerinin
+tek başına basit gibi görünse de,
+uygulamanın tamamen ele geçirilmesine
+kadar gidebilecek sonuçlar
+doğurabileceğini göstermiştir.
+
+Güvenli dosya yükleme mekanizmalarının
+tasarlanması, web uygulama güvenliğinin
+kritik bir parçasıdır.
