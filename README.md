@@ -1,54 +1,65 @@
-# 🔐 Web Security Learning Labs
+# Web Security Learning Labs
 
-Bu repository, web uygulama güvenliği alanında temel zafiyetleri
-öğrenmek ve anlamak amacıyla hazırlanmış **eğitim amaçlı laboratuvarları**
-içermektedir.
+This repository documents my hands-on learning process in web application security through structured lab write-ups.
 
-Her laboratuvar, belirli bir güvenlik açığını (örneğin SQL Injection,
-Brute Force, File Upload, RCE vb.) ele alır ve bu açığın:
+It focuses on understanding how common web vulnerabilities work, how they can be identified in controlled environments, and how they can be mitigated from a defensive perspective.
 
-- Nasıl oluştuğunu
-- Nasıl sömürülebildiğini
-- Nasıl önlenebileceğini
-
-adım adım açıklamayı amaçlar.
+> All content in this repository is created for educational purposes and based on authorized lab environments.
 
 ---
 
-## 🎯 Amaç
+## Focus Areas
 
-Bu repository’nin amacı:
+This repository currently includes labs and notes related to:
 
-- Web güvenliği zafiyetlerini **pratik örnekler** üzerinden öğrenmek  
-- Saldırgan bakış açısını anlamak  
-- Güvenli yazılım geliştirme farkındalığı kazanmak  
-- Siber güvenlik alanındaki kişisel gelişimi belgelemek  
-
----
-
-## 🧪 Laboratuvar Yapısı
-
-Her laboratuvar aşağıdaki bölümlerden oluşur:
-
-- **Overview** – Zafiyetin genel tanımı  
-- **Methodology** – Test yaklaşımı ve kullanılan yöntemler  
-- **Exploitation** – Açığın sömürülme süreci  
-- **Mitigation** – Güvenlik önlemleri ve çözüm önerileri  
-- **Lessons Learned / Results** – Öğrenilen dersler  
+- SQL Injection
+- File Upload Vulnerabilities
+- Brute Force Attacks
+- Server-Side Template Injection (SSTI)
+- Local File Inclusion (LFI)
 
 ---
 
-## ⚠️ Uyarı
+## Repository Goal
 
-Bu repository **tamamen eğitim amaçlıdır**.  
-Buradaki içerikler yalnızca **yetkili ve kontrollü ortamlarda**
-kullanılmalıdır.
+The main purpose of this repository is to:
+
+- build a public learning portfolio in web security
+- document vulnerability research in a structured way
+- improve security thinking from both attacker and defender perspectives
+- demonstrate consistency in cybersecurity learning
 
 ---
 
-## 🌱 Not
+## Lab Structure
 
-Açıklamaların bir kısmı öğrenme sürecini kolaylaştırmak adına
-Türkçe olarak hazırlanmıştır.
-Teknik terimler ve klasör yapıları sektörel standartlara uygun
-olarak İngilizce bırakılmıştır.
+Each lab is organized with a consistent write-up format:
+
+- `overview.md` → vulnerability summary and lab scope
+- `methodology.md` → testing approach and analysis logic
+- `exploitation.md` → how the issue was validated in the lab
+- `mitigation.md` → defensive recommendations
+- `conclusion.md` / `lessons-learned.md` / `results.md` → final takeaways
+
+---
+
+## Labs
+
+- [Brute Force](./labs/brute-force/)
+- [SQL Injection](./labs/sql-injection/)
+- [File Upload](./labs/file-upload/)
+- [SSTI](./labs/leaf-ssti/)
+- [LFI](./labs/venomous-lfi/)
+
+---
+
+## Notes
+
+Some explanations are written in Turkish to make the learning process more natural and sustainable for me, while file names and technical structure are kept in English.
+
+---
+
+## Disclaimer
+
+This repository does **not** promote unauthorized activity.  
+All content is intended for ethical, legal, and educational use in controlled environments only.
